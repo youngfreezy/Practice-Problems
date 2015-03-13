@@ -75,17 +75,3 @@ console.log(filterUsingMap(array, function(x){
 //map will go through every item in the array and on 
 //each iteration it will return something
 //that will get added to the array.  
-
-//inside higher order functions, returns don't stop the loops from running. 
-//(usually)
-
-// So remember when I said they only do either filter or map, 
-// not both, I think this may be why. Writing filter with map 
-// won’t actually work, since map is going to add something to 
-// the new array for every item in the original array, and filter 
-// is trying to not add items at some points. Thats why all the 
-// things that did pass the filter test were in there, but the thing 
-// that didn’t just came in as a falsey value. If they have you do filter, 
-// they will have you use it with each. Sorry about that, but I 
-// still think the things we talked through were valuable when 
-// going through that function, it just won’t work with map as we want.
